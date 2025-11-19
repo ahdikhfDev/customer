@@ -1,0 +1,63 @@
+@props(['noPrint' => false])
+<footer class="bg-gradient-to-br from-[#003d82] to-[#002754] text-white mt-20 relative overflow-hidden @if($noPrint) no-print @endif">
+  <div class="absolute inset-0 opacity-5" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6zm0 54c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6zM0 30c0-3.314 2.686-6 6-6s6 2.686 6 6-2.686 6-6 6-6-2.686-6-6zm54 0c0-3.314 2.686-6 6-6s6 2.686 6 6-2.686 6-6 6-6-2.686-6-6z' fill='%23ffffff' fill-rule='evenodd'/%3E%3C/svg%3E&quot;);">
+  </div>
+  <div class="h-1 bg-[#d4af37]"></div>
+  <div class="container mx-auto px-4 py-12 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+            <i data-lucide="shield" class="w-6 h-6 text-[#d4af37]"></i>
+          </div>
+          <div>
+            <div class="font-bold">DJBC</div>
+            <div class="text-sm text-slate-300">Layanan Tatap Muka</div>
+          </div>
+        </div>
+        <p class="text-sm text-slate-300">
+          Direktorat Jenderal Bea dan Cukai melayani keperluan kepabeanan dan cukai dengan profesional.
+        </p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4">Layanan</h3>
+        <ul class="space-y-2 text-sm text-slate-300">
+          <li><a href="{{ url('/layanan?serviceId=informasi') }}" class="hover:underline">Informasi Kepabeanan & Cukai</a></li>
+          <li><a href="{{ url('/layanan?serviceId=klasifikasi') }}" class="hover:underline">Klasifikasi Barang</a></li>
+          <li><a href="{{ url('/layanan?serviceId=fasilitas') }}" class="hover:underline">Fasilitas Pembebasan</a></li>
+          <li><a href="{{ url('/layanan?serviceId=pengaduan') }}" class="hover:underline">Pengaduan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4">Kontak</h3>
+        <div class="space-y-2 text-sm text-slate-300">
+          <p>Kementerian Keuangan RI</p>
+          <p>Jl. Jenderal A. Yani, Jakarta</p>
+          <p>Email: info@beacukai.go.id</p>
+          <p>Telp: (021) 4890308</p>
+          <p class="pt-2 border-t border-white/20 mt-2 text-xs">
+            <strong>Lokasi Pelayanan Tatap Muka:</strong><br>
+            Gedung Papua, Kantor Pusat DJBC<br>
+            Jl. Jenderal Ahmad Yani, Jakarta
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/20 mt-8 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-slate-300 text-center md:text-left">
+          &copy; 2025 Direktorat Jenderal Bea dan Cukai. Kementerian Keuangan Republik Indonesia.
+        </p>
+        @if(!Request::is('antrian'))
+        <button
+          id="survey-btn-footer"
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-9 px-3 gap-2 border border-white/30 text-white hover:bg-white/10"
+        >
+          <i data-lucide="star" class="w-4 h-4"></i>
+          Survey Kepuasan
+        </button>
+        @endif
+      </div>
+    </div>
+  </div>
+</footer>
