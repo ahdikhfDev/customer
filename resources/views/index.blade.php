@@ -4,8 +4,12 @@
 
 @section('content')
     <section class="relative bg-gradient-to-br from-[#003d82] via-[#0052a3] to-[#003d82] text-white overflow-hidden">
-        <div class="absolute inset-0 opacity-10" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E&quot;);">
-        </div>
+     <div class="absolute inset-0 opacity-15" 
+     style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23ffffff' stroke-width='1'%3E%3Cpath d='M40 0L80 40L40 80L0 40z'/%3E%3Cpath d='M40 10L70 40L40 70L10 40z'/%3E%3Cpath d='M40 20L60 40L40 60L20 40z'/%3E%3Cpath d='M10 10H30V30H10z'/%3E%3Cpath d='M50 10H70V30H50z'/%3E%3Cpath d='M50 50H70V70H50z'/%3E%3Cpath d='M10 50H30V70H10z'/%3E%3Ccircle cx='40' cy='40' r='5'/%3E%3Ccircle cx='40' cy='10' r='2'/%3E%3Ccircle cx='70' cy='40' r='2'/%3E%3Ccircle cx='40' cy='70' r='2'/%3E%3Ccircle cx='10' cy='40' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;);">
+      <!-- <div class="absolute inset-0 opacity-50 flex items-center justify-center">
+        <img src="./image/batik.png" alt="">
+    </div> -->
+</div>
         
         <div class="container mx-auto px-4 py-20 relative z-10">
             <div class="max-w-4xl mx-auto text-center">

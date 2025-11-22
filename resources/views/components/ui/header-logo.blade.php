@@ -1,6 +1,7 @@
 <a href="{{ url('/') }}" class="flex items-center gap-3">
-  <div class="w-14 h-14 bg-gradient-to-br from-[#003d82] to-[#0052a3] rounded-lg flex items-center justify-center shadow-lg">
-    <i data-lucide="shield" class="w-8 h-8 text-white"></i>
+  <div class="w-14 h-14 flex items-center justify-center">
+    <!-- <i data-lucide="shield" class="w-8 h-8 text-white"></i> -->
+     <img src="./image/logo.png" alt="">
   </div>
   <div>
     <div class="text-[#003d82] font-bold text-lg leading-tight">DJBC</div>

@@ -121,14 +121,24 @@
                 </div>
 
                 {{-- Map Placeholder (DILENGKAPI) --}}
+               {{-- Map Placeholder (DENGAN PIN/MARKER) --}}
                 <div class="mt-8 p-0 overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm">
-                    <div class="bg-slate-200 h-96 flex items-center justify-center">
-                        {{-- Placeholder/Iframe Google Maps bisa ditaruh di sini --}}
-                        <div class="text-center text-slate-500">
-                            <i data-lucide="map-pin" class="w-16 h-16 mx-auto mb-4"></i>
-                            <p class="text-lg font-medium">Peta Lokasi Kantor Pusat</p>
-                            <p class="text-sm">Jl. Jenderal A. Yani, Jakarta Pusat</p>
-                        </div>
+                    <div class="bg-slate-200 h-96 w-full relative">
+                        <iframe 
+                            class="absolute inset-0 w-full h-full"
+                            width="100%" 
+                            height="100%" 
+                            id="gmap_canvas" 
+                            src="https://maps.google.com/maps?q=Kantor%20Pusat%20Direktorat%20Jenderal%20Bea%20dan%20Cukai&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            frameborder="0" 
+                            scrolling="no" 
+                            marginheight="0" 
+                            marginwidth="0"
+                            title="Peta Lokasi Kantor Pusat DJBC"
+                        ></iframe>
+                        
+                        {{-- Overlay agar peta tidak ter-scroll tidak sengaja saat scroll halaman (Opsional) --}}
+                        <div class="absolute inset-0 pointer-events-none border-4 border-transparent rounded-lg"></div>
                     </div>
                 </div>
 
@@ -136,10 +146,9 @@
                 <div class="mt-8 text-center">
                     <p class="text-slate-600 mb-4">Ikuti kami di media sosial:</p>
                     <div class="flex justify-center gap-4">
-                        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-9 px-4 py-2 border border-slate-300 text-slate-700 hover:bg-slate-100 transition-colors">Facebook</button>
-                        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-9 px-4 py-2 border border-slate-300 text-slate-700 hover:bg-slate-100 transition-colors">Twitter</button>
-                        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-9 px-4 py-2 border border-slate-300 text-slate-700 hover:bg-slate-100 transition-colors">Instagram</button>
-                        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-9 px-4 py-2 border border-slate-300 text-slate-700 hover:bg-slate-100 transition-colors">YouTube</button>
+                        <a href="https://www.facebook.com/bravobeacukai/" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-9 px-4 py-2 border border-slate-300 text-slate-700 hover:bg-slate-100 transition-colors" target="_blank">Facebook</a>
+                        <a href="https://www.instagram.com/bravobeacukai?igsh=M2ZocW8zcnkzczNs" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-9 px-4 py-2 border border-slate-300 text-slate-700 hover:bg-slate-100 transition-colors" target="_blank">Instagram</a>
+                        <a href="https://youtube.com/@beacukairi?si=R2uxR-1hYAH02eMy" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-9 px-4 py-2 border border-slate-300 text-slate-700 hover:bg-slate-100 transition-colors" target="_blank">YouTube</a>
                     </div>
                 </div>
                 
